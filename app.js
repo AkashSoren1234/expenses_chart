@@ -11,7 +11,6 @@ window.addEventListener("load", (event) => {
   chart_function(window.innerWidth);
 
   window.addEventListener("resize", () => {
-    console.log(window.innerWidth);
     chart_function(window.innerWidth);
   });
 
@@ -19,7 +18,6 @@ window.addEventListener("load", (event) => {
     let scale_height_value = "";
     let charts_content = myJson
       .map((val) => {
-        console.log(val);
         if (screen_width < 1000) {
           scale_height_value = val.amount * 1.71;
         } else {
@@ -32,7 +30,6 @@ window.addEventListener("load", (event) => {
         <span class="day-text">${val.day}</span>
         </div>`;
         } else {
-          console.log("nowow");
           return `<div class="single-chart-container">
         <span class="chart-value">$${val.amount}</span>
         <div class="chart" style="height:${scale_height_value}px;"></div>
@@ -48,11 +45,9 @@ window.addEventListener("load", (event) => {
     let charts = document.querySelectorAll(".chart");
 
     charts.forEach((chart, index) => {
-      console.log("wtf");
       chart.addEventListener("mouseover", () => {
         chart_values.forEach((chart_value) => {
           chart_value.classList.remove("chart-value-visible");
-          console.log(chart_value.textContent);
         });
         chart_values[index].classList.add("chart-value-visible");
       });
