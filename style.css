@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ min-height: 100vh;
+ background-color: hsl(27, 66%, 92%);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.container {
+ /* background-color: aqua; */
+ width: 360px;
+ padding: 1rem;
+ font-family: 'DM Sans', sans-serif;
+ min-height: 100vh;
+ min-height: -moz-available;
+ min-height: -webkit-fill-available;
+ min-height: fill-available;
+}
+
+.total-balance-container {
+ display: flex;
+ justify-content: space-between;
+ background-color: hsl(10, 79%, 65%);
+ padding: 1rem;
+ color: hsl(33, 100%, 98%);
+ border-radius: 0.8rem;
+}
+
+.total-balance-title {
+ font-size: 0.78rem;
+ font-weight: 100;
+ color: hsl(33, 100%, 98%);
+}
+
+.total-balance {
+ display: block;
+ margin-top: 0.4rem;
+ font-size: 1.3rem;
+ font-weight: bold;
+ color: hsl(33, 100%, 98%);
+}
+
+.initial-image-container {
+ text-align: center;
+ /* background-color: aqua; */
+}
+
+.initial-image {
+ width: 80%;
+}
+
+.main-container {
+ margin-top: 1rem;
+ background-color: hsl(33, 100%, 98%);
+ padding: 1rem;
+}
+
+.main-title {
+ font-size: 1.4rem;
+ color: hsl(25, 47%, 15%);
+}
+
+.charts-container {
+ /* background-color: hsl(33, 100%, 98%); */
+ display: flex;
+ height: 150px;
+ align-items: flex-end;
+ justify-content: space-between;
+ text-align: center;
+}
+
+.single-chart-container {
+ /* background-color: coral; */
+ width: 47px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.chart {
+ /* multipliy factor is 1.71 */
+ height: 90px;
+ width: 30px;
+ background-color: hsl(10, 79%, 65%);
+ margin-bottom: 0.6rem;
+ cursor: pointer;
+ transition: 0.3s all ease-in;
+ border-radius: 0.28rem;
+}
+
+.chart:hover {
+ opacity: 0.4;
+}
+
+.chart-value {
+ background-color: hsl(25, 47%, 15%);;
+ display: none;
+ color: hsl(33, 100%, 98%);
+ font-size: 0.7rem;
+ padding: 0.3rem 0;
+ width: 40px;
+ margin-bottom: 0.3rem;
+ border-radius: 0.3rem;
+}
+
+.chart-value-visible {
+ display: block;
+}
+
+.day-text {
+ font-size: 0.8rem;
+ color: hsl(28, 10%, 53%);
+}
+
+.underline {
+ background-color: hsl(10, 79%, 65%);
+ height: 0.01rem;
+ margin: 1.3rem 0;
+}
+
+.single-month-title {
+ font-size: 0.9rem;
+ font-weight: 100;
+ color: hsl(28, 10%, 53%);
+ margin-bottom: 0.4rem;
+}
+
+.single-month-details-container {
+ display: flex;
+ justify-content: space-between;
+ text-align: right;
+}
+
+.single-month-price {
+ font-size: 1.8rem;
+ font-weight: bolder;
+ color: hsl(25, 47%, 15%);
+}
+
+.profit {
+ display: block;
+ font-weight: bold;
+ color: hsl(25, 47%, 15%);
+}
+
+.profit-more-detail {
+ font-size: 0.9rem;
+ color: hsl(28, 10%, 53%);
+}
+
+@media screen and (min-width: 62.5rem) {
+ 
+ .container {
+  width: 660px;
+ }
+
+ .total-balance-title {
+  font-size: 1.6rem;
+ }
+
+ .total-balance {
+  font-size: 2.6rem;
+ }
+
+ .initial-image-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+ }
+
+ .initial-image {
+  width: 100%;
+ }
+
+ .main-title {
+  font-size: 2rem;
+ }
+
+ .charts-container {
+  height: 260px;
+ }
+
+ .single-chart-container {
+  /* background-color: aqua; */
+  width: 83px;
+ }
+
+ .chart {
+  width: 56px;
+  border-radius: 0.3rem;
+ }
+
+ .chart-value {
+  font-size: 1.2rem;
+  width: 76px;
+ }
+
+ .day-text {
+  font-size: 1.5rem;
+ }
+
+ .single-month-title {
+  font-size: 1.5rem;
+ }
+
+ .single-month-price {
+  font-size: 3.9rem;
+ }
+
+ .more-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
+ }
+
+ .profit {
+  font-size: 1.4rem;
+
+ }
+
+ .profit-more-detail {
+  vertical-align: bottom;
+  font-size: 1.3rem;
+ }
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses_chart</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="expenses-container">
+        <div class="total-balance-container">
+          <div class="total-balance-details-container">
+            <h1 class="total-balance-title">My balance</h1>
+            <span class="total-balance">$921.48</span>
+          </div>
+          <div class="initial-image-container">
+            <img src="./images/logo.svg" alt="" class="initial-image" />
+          </div>
+        </div>
+        <div class="main-container">
+          <h1 class="main-title">Spending - Last 7 days</h1>
+          <div class="charts-container">
+          </div>
+          <div class="single-month-container">
+            <div class="underline"></div>
+            <h1 class="single-month-title">Total this month</h1>
+            <div class="single-month-details-container">
+              <span class="single-month-price">$478.33</span>
+              <div class="more-details">
+                <span class="profit">+2.4%</span>
+                <span class="profit-more-detail">from last month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
