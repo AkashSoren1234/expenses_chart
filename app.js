@@ -1,4 +1,4 @@
-import myJson from "../data.json" assert { type: "json" };
+import myJson from "./data.json" assert { type: "json" };
 
 window.addEventListener("load", (event) => {
   let main_chart_container = document.querySelector(".charts-container");
