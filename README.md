@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/AkashSoren1234/expenses_chart](https://your-solution-url.com)
-- Live Site URL: [https://akashsoren1234.github.io/expenses_chart/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/AkashSoren1234/expenses_chart](https://github.com/AkashSoren1234/expenses_chart)
+- Live Site URL: [https://akashsoren1234.github.io/expenses_chart/](https://akashsoren1234.github.io/expenses_chart/)
 
 ## My process
 
